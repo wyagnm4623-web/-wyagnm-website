@@ -9,6 +9,40 @@
   <title>WYAGNM. — Video Editor / Creative</title>
 
   <style>
+    .real-work {
+  width: 100%;
+  background: #0a0a0a;
+  border: 1px solid #252525;
+  overflow: hidden;
+}
+
+.real-work img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform .5s ease;
+}
+
+.real-work:hover img {
+  transform: scale(1.015);
+}
+
+.real-work-caption {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-top: 1px solid #252525;
+  color: #666;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .real-work-caption {
+    font-size: 8px;
+    padding: 13px 15px;
+  }
     * {
       box-sizing: border-box;
       margin: 0;
@@ -624,30 +658,43 @@
     </section>
 
 
-    <!-- SELECTED WORK -->
+  <!-- SELECTED WORK -->
 
-    <section id="work">
+<section id="work">
 
-      <div class="section-head">
+  <div class="section-head">
 
-        <div>
-          <div class="section-number">01 / SELECTED WORK</div>
+    <div>
+      <div class="section-number">01 / SELECTED WORK</div>
 
-          <h2 class="section-title">
-            Built<br>To Move.
-          </h2>
-        </div>
+      <h2 class="section-title">
+        Built<br>To Move.
+      </h2>
+    </div>
 
-        <p class="section-description">
-          Fast cuts. Clean motion. Strong pacing.
-          Every edit is built to keep attention and
-          make the content feel bigger.
-        </p>
+    <p class="section-description">
+      Eight different styles. One goal —
+      turn raw footage into content people
+      actually want to watch.
+    </p>
 
-      </div>
+  </div>
 
+  <div class="real-work">
 
-      <div class="feature">
+    <img
+      src="wyagnm-8-videos.jpg"
+      alt="WYAGNM — 8 Videos for $150 per month"
+    >
+
+    <div class="real-work-caption">
+      <span>WYAGNM / 08 EDIT TYPES</span>
+      <span>SCROLL →</span>
+    </div>
+
+  </div>
+
+</section>
 
         <div class="feature-grid">
 
